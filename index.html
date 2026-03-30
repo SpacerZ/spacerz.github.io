@@ -1,315 +1,311 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpacerZ | Portfolio</title>
-  <meta
-    name="description"
-    content="Portfolio GitHub Pages hiện đại, sáng tạo và chuyên nghiệp cho SpacerZ."
-  >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;500;700&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="page-shell">
-    <div class="ambient ambient-one" aria-hidden="true"></div>
-    <div class="ambient ambient-two" aria-hidden="true"></div>
-    <div class="grid-overlay" aria-hidden="true"></div>
 
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Trang chủ SpacerZ">
-        <span class="brand-mark">SZ</span>
-        <span class="brand-copy">
-          <strong>SpacerZ</strong>
-          <small>Portfolio / 2026</small>
-        </span>
-      </a>
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="site-nav"
-        aria-label="Mở menu điều hướng"
-      >
-        <span></span>
-        <span></span>
-      </button>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
 
-      <nav class="site-nav" id="site-nav" aria-label="Điều hướng chính">
-        <a href="#gioi-thieu">Giới thiệu</a>
-        <a href="#du-an">Dự án</a>
-        <a href="#quy-trinh">Quy trình</a>
-        <a href="#lien-he">Liên hệ</a>
-      </nav>
-    </header>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">DEV</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" data-text="About">About</a></li>
+      <li><a href="#projects" data-text="Projects">Projects</a></li>
+      <li><a href="#skills" data-text="Skills">Skills</a></li>
+      <li><a href="#contact" data-text="Contact">Contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">Available for work</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Creative portfolio / frontend / product direction</p>
-          <h1>
-            Thiết kế giao diện có chiều sâu,
-            <span>xây trải nghiệm đủ ấn tượng để người xem nhớ ngay từ lần chạm đầu.</span>
-          </h1>
-          <p class="hero-lead">
-            Portfolio này được xây để trình bày tư duy thẩm mỹ, năng lực triển khai giao diện
-            và cách biến ý tưởng thành sản phẩm số chỉn chu, rõ cá tính và đáng tin cậy.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#du-an">Xem dự án nổi bật</a>
-            <a
-              class="button button-secondary"
-              href="https://github.com/SpacerZ"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Mở GitHub
-            </a>
-          </div>
-
-          <ul class="hero-tags" aria-label="Thế mạnh">
-            <li>UI Direction</li>
-            <li>Frontend Build</li>
-            <li>Design System</li>
-            <li>Motion Detail</li>
-          </ul>
-        </div>
-
-        <aside class="hero-panel" data-reveal>
-          <div class="signal-card">
-            <div class="signal-row">
-              <span>Trạng thái</span>
-              <strong>Sẵn sàng nhận dự án mới</strong>
-            </div>
-            <div class="signal-row">
-              <span>Tập trung</span>
-              <strong>Portfolio, landing page, dashboard, website thương hiệu</strong>
-            </div>
-            <div class="signal-row">
-              <span>Giá trị cốt lõi</span>
-              <strong>Khác biệt rõ ràng, trải nghiệm mượt, cảm giác chuyên nghiệp</strong>
-            </div>
-          </div>
-
-          <div class="orbit-card">
-            <div class="orbit-core">
-              <p>Creative stack</p>
-              <strong>Editorial × Futuristic</strong>
-            </div>
-
-            <div class="orbit-chip orbit-chip-top">
-              <span>Visual tone</span>
-              <strong>Sắc nét, tinh tế, có điểm nhấn</strong>
-            </div>
-
-            <div class="orbit-chip orbit-chip-right">
-              <span>Output</span>
-              <strong>Static site tối ưu cho GitHub Pages</strong>
-            </div>
-
-            <div class="orbit-chip orbit-chip-bottom">
-              <span>Nguyên tắc</span>
-              <strong>Không generic, không rườm rà, không lỗi thời</strong>
-            </div>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section-block intro-block" id="gioi-thieu">
-        <div class="section-heading" data-reveal>
-          <p class="section-kicker">Giới thiệu</p>
-          <h2>Một portfolio không chỉ đẹp, mà còn phải truyền được đẳng cấp làm việc.</h2>
-        </div>
-
-        <div class="intro-layout">
-          <article class="intro-manifesto" data-reveal>
-            <p class="intro-highlight">
-              Tôi theo đuổi phong cách giao diện có chất biên tập: bố cục thoáng, typography mạnh,
-              chuyển động tiết chế và từng khối nội dung đều có vai trò rõ ràng.
-            </p>
-            <p>
-              Mục tiêu là tạo cảm giác chuyên nghiệp ngay lập tức, nhưng vẫn giữ sự sáng tạo đủ
-              riêng để portfolio không bị chìm giữa hàng trăm trang cá nhân giống nhau.
-            </p>
-          </article>
-
-          <div class="intro-grid">
-            <article class="value-card" data-reveal>
-              <span>01</span>
-              <h3>Bản sắc thị giác</h3>
-              <p>Màu sắc, nhịp điệu và typography được chọn để tạo ấn tượng có chủ đích.</p>
-            </article>
-
-            <article class="value-card" data-reveal>
-              <span>02</span>
-              <h3>Tư duy sản phẩm</h3>
-              <p>Không chỉ làm đẹp, mà còn ưu tiên thứ tự thông tin và hành vi người dùng.</p>
-            </article>
-
-            <article class="value-card" data-reveal>
-              <span>03</span>
-              <h3>Triển khai mượt</h3>
-              <p>Site tĩnh gọn nhẹ, responsive tốt, đủ sạch để đưa lên GitHub Pages ngay.</p>
-            </article>
-
-            <article class="value-card" data-reveal>
-              <span>04</span>
-              <h3>Tinh chỉnh chi tiết</h3>
-              <p>Hover, nhịp cuộn, bố cục và khoảng trắng đều được xử lý như một sản phẩm thật.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-block project-block" id="du-an">
-        <div class="section-heading" data-reveal>
-          <p class="section-kicker">Dự án nổi bật</p>
-          <h2>Ba hướng triển khai tiêu biểu cho những sản phẩm cần vừa đẹp vừa thuyết phục.</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card project-card-featured" data-reveal>
-            <div class="project-visual project-visual-one">
-              <p>Case 01</p>
-              <strong>Nền tảng học tập cao cấp</strong>
-            </div>
-            <div class="project-copy">
-              <div class="project-meta">
-                <span>UI/UX Concept</span>
-                <span>Web Platform</span>
-              </div>
-              <h3>Thiết kế lại trang giới thiệu khóa học để tạo cảm giác cao cấp và dễ tin cậy.</h3>
-              <p>
-                Tập trung vào phần trình bày giá trị, nhịp cuộn kể chuyện và các khối nội dung giúp
-                người xem hiểu chất lượng sản phẩm ngay từ màn đầu tiên.
-              </p>
-              <ul class="project-tags">
-                <li>Storytelling layout</li>
-                <li>Premium visual</li>
-                <li>Conversion-minded</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-visual project-visual-two">
-              <p>Case 02</p>
-              <strong>Landing page SaaS B2B</strong>
-            </div>
-            <div class="project-copy">
-              <div class="project-meta">
-                <span>Brand Website</span>
-                <span>Launch Ready</span>
-              </div>
-              <h3>Tạo landing page rõ thông điệp, ít nhiễu, đậm chất công nghệ.</h3>
-              <p>
-                Thiết kế dành cho sản phẩm cần gây ấn tượng nhanh với nhà đầu tư, khách hàng hoặc đội
-                ngũ bán hàng khi đang chuẩn bị ra mắt.
-              </p>
-              <ul class="project-tags">
-                <li>Sharp typography</li>
-                <li>Product framing</li>
-                <li>Responsive polish</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-visual project-visual-three">
-              <p>Case 03</p>
-              <strong>Dashboard vận hành</strong>
-            </div>
-            <div class="project-copy">
-              <div class="project-meta">
-                <span>Internal Tool</span>
-                <span>Data View</span>
-              </div>
-              <h3>Biến dữ liệu dày đặc thành giao diện gọn, dễ quét và đủ chiều sâu thị giác.</h3>
-              <p>
-                Ưu tiên cấu trúc thông tin, khả năng đọc nhanh và cảm giác “vận hành chuyên nghiệp”
-                thay vì chỉ ghép các khối card đơn điệu.
-              </p>
-              <ul class="project-tags">
-                <li>Information hierarchy</li>
-                <li>System thinking</li>
-                <li>Clean interaction</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-block process-block" id="quy-trinh">
-        <div class="section-heading" data-reveal>
-          <p class="section-kicker">Quy trình</p>
-          <h2>Cách tôi biến một ý tưởng thô thành giao diện hoàn thiện và sẵn sàng xuất bản.</h2>
-        </div>
-
-        <div class="process-grid">
-          <article class="process-card" data-reveal>
-            <span>01</span>
-            <h3>Định hình</h3>
-            <p>Xác định mục tiêu trang, người xem chính và cảm xúc thương hiệu cần truyền tải.</p>
-          </article>
-
-          <article class="process-card" data-reveal>
-            <span>02</span>
-            <h3>Định hướng hình ảnh</h3>
-            <p>Chọn concept thị giác, typography, bảng màu và nhịp bố cục để tạo khác biệt.</p>
-          </article>
-
-          <article class="process-card" data-reveal>
-            <span>03</span>
-            <h3>Dựng giao diện</h3>
-            <p>Triển khai site tĩnh sạch, dễ bảo trì, có chuyển động hợp lý và tối ưu responsive.</p>
-          </article>
-
-          <article class="process-card" data-reveal>
-            <span>04</span>
-            <h3>Đánh bóng</h3>
-            <p>Tinh chỉnh chi tiết tương tác, cân lại khoảng trắng và tối ưu trải nghiệm khi cuộn.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-block contact-block" id="lien-he">
-        <div class="contact-panel" data-reveal>
-          <p class="section-kicker">Liên hệ</p>
-          <h2>Sẵn sàng biến portfolio này thành phiên bản mang đúng cá tính và thông tin của bạn.</h2>
-          <p>
-            Mẫu hiện tại đã tối ưu để dùng làm nền cho GitHub Pages. Bạn chỉ cần thay nội dung cá
-            nhân, liên kết mạng xã hội và các case study thật là có thể xuất bản ngay.
-          </p>
-
-          <div class="contact-actions">
-            <a
-              class="button button-primary"
-              href="https://github.com/SpacerZ"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub Profile
-            </a>
-            <a class="button button-secondary" href="#top">Quay lên đầu trang</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>SpacerZ Portfolio Template</p>
-      <p>Thiết kế cho GitHub Pages, tối ưu cho cảm giác hiện đại và chuyên nghiệp.</p>
-    </footer>
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
   </div>
 
-  <script src="./script.js"></script>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">CODE</div>
+    <div class="hero-content">
+      <div class="hero-label">
+        <span class="label-line"></span>
+        <span>Full Stack Developer</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-delay="0">YOUR</span>
+        <span class="title-line accent" data-delay="100">NAME</span>
+        <span class="title-line thin" data-delay="200">HERE</span>
+      </h1>
+      <p class="hero-sub">
+        Tôi xây dựng những sản phẩm kỹ thuật số<br/>
+        <em>đẹp, nhanh và có ý nghĩa.</em>
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <span>Xem dự án</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://github.com/yourusername" class="btn-ghost" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-frame">
+        <div class="avatar-glow"></div>
+        <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="Avatar" class="avatar-img" />
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring ring-2"></div>
+      </div>
+      <div class="floating-stats">
+        <div class="stat-chip" data-delay="300">
+          <span class="chip-num" data-count="42">0</span>
+          <span class="chip-label">Repositories</span>
+        </div>
+        <div class="stat-chip" data-delay="500">
+          <span class="chip-num" data-count="1.2k">0</span>
+          <span class="chip-label">GitHub Stars</span>
+        </div>
+        <div class="stat-chip" data-delay="700">
+          <span class="chip-num" data-count="3">0</span>
+          <span class="chip-label">Years Exp.</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            Tôi là một <strong>Full Stack Developer</strong> đam mê tạo ra những trải nghiệm web tuyệt vời.
+          </p>
+          <p>
+            Với nền tảng vững chắc về cả frontend lẫn backend, tôi luôn tìm cách kết hợp giữa kỹ thuật và nghệ thuật để tạo ra những sản phẩm không chỉ hoạt động tốt mà còn đẹp mắt.
+          </p>
+          <p>
+            Hiện tại tôi đang làm việc tại <strong>Ho Chi Minh City</strong>, tập trung vào các dự án React, Node.js và cloud infrastructure.
+          </p>
+          <div class="about-links">
+            <a href="resume.pdf" class="about-link" download>
+              <span>Download CV</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-item">
+            <span class="detail-key">Location</span>
+            <span class="detail-val">Ho Chi Minh City, VN</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-key">Role</span>
+            <span class="detail-val">Full Stack Developer</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-key">Focus</span>
+            <span class="detail-val">Web & Mobile Apps</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-key">Status</span>
+            <span class="detail-val available">Open to opportunities</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-key">Education</span>
+            <span class="detail-val">Computer Science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Projects</h2>
+        <a href="https://github.com/yourusername" class="see-all" target="_blank" rel="noopener">View all on GitHub →</a>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Skills &amp; Tech</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-categories" id="skillsCategories">
+          <!-- Rendered by JS -->
+        </div>
+        <div class="skills-orbit">
+          <div class="orbit-ring ring-a">
+            <div class="orbit-icon" style="--angle:0deg"><span>⚛️</span></div>
+            <div class="orbit-icon" style="--angle:72deg"><span>🟨</span></div>
+            <div class="orbit-icon" style="--angle:144deg"><span>🎨</span></div>
+            <div class="orbit-icon" style="--angle:216deg"><span>📦</span></div>
+            <div class="orbit-icon" style="--angle:288deg"><span>🔧</span></div>
+          </div>
+          <div class="orbit-ring ring-b">
+            <div class="orbit-icon" style="--angle:36deg"><span>🐍</span></div>
+            <div class="orbit-icon" style="--angle:108deg"><span>🐳</span></div>
+            <div class="orbit-icon" style="--angle:180deg"><span>☁️</span></div>
+            <div class="orbit-icon" style="--angle:252deg"><span>🗄️</span></div>
+            <div class="orbit-icon" style="--angle:324deg"><span>🔐</span></div>
+          </div>
+          <div class="orbit-center">
+            <span class="orbit-center-text">TECH</span>
+            <span class="orbit-center-sub">STACK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Activity Section -->
+  <section class="github-activity" id="activity">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">GitHub Activity</h2>
+      </div>
+      <div class="activity-grid">
+        <div class="activity-card contributions">
+          <div class="activity-label">Contribution Graph</div>
+          <div class="contrib-grid" id="contribGrid"></div>
+          <div class="contrib-legend">
+            <span>Less</span>
+            <span class="legend-box l0"></span>
+            <span class="legend-box l1"></span>
+            <span class="legend-box l2"></span>
+            <span class="legend-box l3"></span>
+            <span class="legend-box l4"></span>
+            <span>More</span>
+          </div>
+        </div>
+        <div class="activity-stats-col">
+          <div class="activity-card stat-card">
+            <div class="stat-icon">🔥</div>
+            <div class="stat-big" data-count="365">0</div>
+            <div class="stat-desc">Contribution streak</div>
+          </div>
+          <div class="activity-card stat-card">
+            <div class="stat-icon">⭐</div>
+            <div class="stat-big" data-count="1247">0</div>
+            <div class="stat-desc">Total stars earned</div>
+          </div>
+          <div class="activity-card stat-card">
+            <div class="stat-icon">🍴</div>
+            <div class="stat-big" data-count="328">0</div>
+            <div class="stat-desc">Total forks</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-text">
+          <p class="contact-lead">Hãy cùng xây dựng điều gì đó tuyệt vời.</p>
+          <p>Tôi luôn sẵn sàng cho những cơ hội mới, dự án thú vị, hoặc chỉ đơn giản là một cuộc trò chuyện về công nghệ.</p>
+          <a href="mailto:hello@yourname.dev" class="contact-email">hello@yourname.dev</a>
+        </div>
+        <div class="contact-socials">
+          <a href="https://github.com/yourusername" class="social-link" target="_blank" rel="noopener">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="social-info">
+              <span class="social-name">GitHub</span>
+              <span class="social-handle">@yourusername</span>
+            </div>
+            <svg class="social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank" rel="noopener">
+            <div class="social-icon linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="social-info">
+              <span class="social-name">LinkedIn</span>
+              <span class="social-handle">Your Name</span>
+            </div>
+            <svg class="social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+          <a href="https://twitter.com/yourusername" class="social-link" target="_blank" rel="noopener">
+            <div class="social-icon twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </div>
+            <div class="social-info">
+              <span class="social-name">Twitter / X</span>
+              <span class="social-handle">@yourusername</span>
+            </div>
+            <svg class="social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2025 Your Name. Built with ❤️ &amp; ☕</span>
+      <span class="footer-tech">HTML · CSS · JS</span>
+      <a href="#home" class="footer-top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
