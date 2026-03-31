@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Your Name</title>
+  <title>SpacerZ — Trần Bình An</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,102 +11,106 @@
 </head>
 <body>
 
-  <!-- Custom cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-trail" id="cursorTrail"></div>
-
-  <!-- Noise overlay -->
   <div class="noise"></div>
 
   <!-- Navigation -->
-  <nav class="nav">
+  <nav class="nav" id="mainNav">
     <div class="nav-logo">
       <span class="logo-bracket">[</span>
-      <span class="logo-text">DEV</span>
+      <span class="logo-text">SPACERZ</span>
       <span class="logo-bracket">]</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#about" data-text="About">About</a></li>
-      <li><a href="#projects" data-text="Projects">Projects</a></li>
-      <li><a href="#skills" data-text="Skills">Skills</a></li>
-      <li><a href="#contact" data-text="Contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#stats">Activity</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-status">
       <span class="status-dot"></span>
-      <span class="status-text">Available for work</span>
+      <span class="status-text">Open to work</span>
     </div>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- Mobile Nav -->
   <div class="mobile-nav" id="mobileNav">
     <ul>
       <li><a href="#about" class="mobile-link">About</a></li>
       <li><a href="#projects" class="mobile-link">Projects</a></li>
       <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#stats" class="mobile-link">Activity</a></li>
       <li><a href="#contact" class="mobile-link">Contact</a></li>
     </ul>
   </div>
 
-  <!-- Hero Section -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="home">
     <div class="hero-bg-text">CODE</div>
+
     <div class="hero-content">
       <div class="hero-label">
         <span class="label-line"></span>
-        <span>Full Stack Developer</span>
+        <span>Software Engineer · Full Stack Developer</span>
       </div>
+
       <h1 class="hero-title">
-        <span class="title-line" data-delay="0">YOUR</span>
-        <span class="title-line accent" data-delay="100">NAME</span>
-        <span class="title-line thin" data-delay="200">HERE</span>
+        <span class="title-line">TRẦN</span>
+        <span class="title-line accent">BÌNH AN</span>
+        <span class="title-line thin">aka SpacerZ</span>
       </h1>
+
       <p class="hero-sub">
-        Tôi xây dựng những sản phẩm kỹ thuật số<br/>
-        <em>đẹp, nhanh và có ý nghĩa.</em>
+        Building digital products that are<br/>
+        <em>fast, elegant, and meaningful.</em>
       </p>
+
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">
-          <span>Xem dự án</span>
+          <span>View Projects</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="https://github.com/yourusername" class="btn-ghost" target="_blank" rel="noopener">
+        <a href="https://github.com/SpacerZ" class="btn-ghost" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          GitHub
+          @SpacerZ
         </a>
       </div>
     </div>
+
     <div class="hero-visual">
       <div class="avatar-frame">
         <div class="avatar-glow"></div>
-        <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="Avatar" class="avatar-img" />
+        <img
+          src="https://avatars.githubusercontent.com/u/36723955?v=4"
+          alt="SpacerZ — Trần Bình An"
+          class="avatar-img"
+        />
         <div class="avatar-ring"></div>
         <div class="avatar-ring ring-2"></div>
       </div>
       <div class="floating-stats">
-        <div class="stat-chip" data-delay="300">
-          <span class="chip-num" data-count="42">0</span>
-          <span class="chip-label">Repositories</span>
+        <div class="stat-chip">
+          <span class="chip-num" id="yearsExp">0</span>
+          <span class="chip-label">Years on GitHub</span>
         </div>
-        <div class="stat-chip" data-delay="500">
-          <span class="chip-num" data-count="1.2k">0</span>
-          <span class="chip-label">GitHub Stars</span>
-        </div>
-        <div class="stat-chip" data-delay="700">
-          <span class="chip-num" data-count="3">0</span>
-          <span class="chip-label">Years Exp.</span>
+        <div class="stat-chip">
+          <span class="chip-flag">📍</span>
+          <span class="chip-label">Vĩnh Long, VN</span>
         </div>
       </div>
     </div>
+
     <div class="scroll-indicator">
       <div class="scroll-line"></div>
       <span>Scroll</span>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- ===== ABOUT ===== -->
   <section class="about" id="about">
     <div class="section-container">
       <div class="section-header">
@@ -116,62 +120,68 @@
       <div class="about-grid">
         <div class="about-text">
           <p class="about-lead">
-            Tôi là một <strong>Full Stack Developer</strong> đam mê tạo ra những trải nghiệm web tuyệt vời.
+            I'm a <strong>Full Stack Software Engineer</strong> who loves turning complex problems into clean, efficient solutions.
           </p>
           <p>
-            Với nền tảng vững chắc về cả frontend lẫn backend, tôi luôn tìm cách kết hợp giữa kỹ thuật và nghệ thuật để tạo ra những sản phẩm không chỉ hoạt động tốt mà còn đẹp mắt.
+            With a background in <strong>Information Technology</strong> specializing in <strong>Software Engineering</strong>, I've worked across the entire stack — from crafting responsive UIs to designing robust backend services and infrastructure.
           </p>
           <p>
-            Hiện tại tôi đang làm việc tại <strong>Ho Chi Minh City</strong>, tập trung vào các dự án React, Node.js và cloud infrastructure.
+            I enjoy exploring new frameworks, contributing to meaningful projects, and writing code that other developers actually enjoy reading.
           </p>
           <div class="about-links">
-            <a href="resume.pdf" class="about-link" download>
-              <span>Download CV</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+            <a href="mailto:binhancktv@gmail.com" class="about-link">
+              <span>Say Hello</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </a>
+            <a href="https://facebook.com/Ano.Spacer" class="about-link" target="_blank" rel="noopener" style="margin-left:1.5rem;">
+              <span>Facebook</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
             </a>
           </div>
         </div>
         <div class="about-details">
           <div class="detail-item">
-            <span class="detail-key">Location</span>
-            <span class="detail-val">Ho Chi Minh City, VN</span>
+            <span class="detail-key">Name</span>
+            <span class="detail-val">Trần Bình An</span>
           </div>
           <div class="detail-item">
-            <span class="detail-key">Role</span>
-            <span class="detail-val">Full Stack Developer</span>
+            <span class="detail-key">Alias</span>
+            <span class="detail-val">SpacerZ</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-key">Location</span>
+            <span class="detail-val">Vĩnh Long, Vietnam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-key">Degree</span>
+            <span class="detail-val">B.S. Software Engineering</span>
           </div>
           <div class="detail-item">
             <span class="detail-key">Focus</span>
-            <span class="detail-val">Web & Mobile Apps</span>
+            <span class="detail-val">Full Stack · Systems</span>
           </div>
           <div class="detail-item">
             <span class="detail-key">Status</span>
             <span class="detail-val available">Open to opportunities</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-key">Education</span>
-            <span class="detail-val">Computer Science</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- ===== PROJECTS ===== -->
   <section class="projects" id="projects">
     <div class="section-container">
       <div class="section-header">
         <span class="section-num">02</span>
         <h2 class="section-title">Projects</h2>
-        <a href="https://github.com/yourusername" class="see-all" target="_blank" rel="noopener">View all on GitHub →</a>
+        <a href="https://github.com/SpacerZ" class="see-all" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
-      <div class="projects-grid" id="projectsGrid">
-        <!-- Projects rendered by JS -->
-      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- ===== SKILLS ===== -->
   <section class="skills" id="skills">
     <div class="section-container">
       <div class="section-header">
@@ -179,23 +189,22 @@
         <h2 class="section-title">Skills &amp; Tech</h2>
       </div>
       <div class="skills-layout">
-        <div class="skills-categories" id="skillsCategories">
-          <!-- Rendered by JS -->
-        </div>
+        <div class="skills-categories" id="skillsCategories"></div>
         <div class="skills-orbit">
           <div class="orbit-ring ring-a">
             <div class="orbit-icon" style="--angle:0deg"><span>⚛️</span></div>
-            <div class="orbit-icon" style="--angle:72deg"><span>🟨</span></div>
-            <div class="orbit-icon" style="--angle:144deg"><span>🎨</span></div>
-            <div class="orbit-icon" style="--angle:216deg"><span>📦</span></div>
-            <div class="orbit-icon" style="--angle:288deg"><span>🔧</span></div>
+            <div class="orbit-icon" style="--angle:60deg"><span>🟨</span></div>
+            <div class="orbit-icon" style="--angle:120deg"><span>🐹</span></div>
+            <div class="orbit-icon" style="--angle:180deg"><span>🐍</span></div>
+            <div class="orbit-icon" style="--angle:240deg"><span>☕</span></div>
+            <div class="orbit-icon" style="--angle:300deg"><span>🔷</span></div>
           </div>
           <div class="orbit-ring ring-b">
-            <div class="orbit-icon" style="--angle:36deg"><span>🐍</span></div>
-            <div class="orbit-icon" style="--angle:108deg"><span>🐳</span></div>
-            <div class="orbit-icon" style="--angle:180deg"><span>☁️</span></div>
-            <div class="orbit-icon" style="--angle:252deg"><span>🗄️</span></div>
-            <div class="orbit-icon" style="--angle:324deg"><span>🔐</span></div>
+            <div class="orbit-icon" style="--angle:30deg"><span>🐳</span></div>
+            <div class="orbit-icon" style="--angle:102deg"><span>🗄️</span></div>
+            <div class="orbit-icon" style="--angle:174deg"><span>☁️</span></div>
+            <div class="orbit-icon" style="--angle:246deg"><span>🐧</span></div>
+            <div class="orbit-icon" style="--angle:318deg"><span>🔧</span></div>
           </div>
           <div class="orbit-center">
             <span class="orbit-center-text">TECH</span>
@@ -206,49 +215,63 @@
     </div>
   </section>
 
-  <!-- GitHub Activity Section -->
-  <section class="github-activity" id="activity">
+  <!-- ===== LIVE STATS (animated, no real data) ===== -->
+  <section class="live-stats" id="stats">
     <div class="section-container">
       <div class="section-header">
         <span class="section-num">04</span>
-        <h2 class="section-title">GitHub Activity</h2>
+        <h2 class="section-title">Dev Activity</h2>
+        <span class="live-badge"><span class="live-dot"></span>LIVE</span>
       </div>
-      <div class="activity-grid">
-        <div class="activity-card contributions">
-          <div class="activity-label">Contribution Graph</div>
-          <div class="contrib-grid" id="contribGrid"></div>
-          <div class="contrib-legend">
-            <span>Less</span>
-            <span class="legend-box l0"></span>
-            <span class="legend-box l1"></span>
-            <span class="legend-box l2"></span>
-            <span class="legend-box l3"></span>
-            <span class="legend-box l4"></span>
-            <span>More</span>
+      <div class="stats-scene">
+        <!-- Terminal window -->
+        <div class="terminal reveal">
+          <div class="terminal-bar">
+            <span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span>
+            <span class="t-title">spacerz@dev ~ activity</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+
+        <!-- Meter cards -->
+        <div class="meter-grid">
+          <div class="meter-card reveal reveal-delay-1">
+            <div class="meter-label">Commits today</div>
+            <div class="meter-value" id="mCommits">—</div>
+            <div class="meter-bar"><div class="meter-fill" id="mCommitsBar"></div></div>
+          </div>
+          <div class="meter-card reveal reveal-delay-2">
+            <div class="meter-label">Lines changed</div>
+            <div class="meter-value" id="mLines">—</div>
+            <div class="meter-bar"><div class="meter-fill" id="mLinesBar"></div></div>
+          </div>
+          <div class="meter-card reveal reveal-delay-3">
+            <div class="meter-label">PRs merged</div>
+            <div class="meter-value" id="mPRs">—</div>
+            <div class="meter-bar"><div class="meter-fill" id="mPRsBar"></div></div>
+          </div>
+          <div class="meter-card reveal reveal-delay-1">
+            <div class="meter-label">Issues closed</div>
+            <div class="meter-value" id="mIssues">—</div>
+            <div class="meter-bar"><div class="meter-fill" id="mIssuesBar"></div></div>
+          </div>
+          <div class="meter-card reveal reveal-delay-2">
+            <div class="meter-label">Code reviews</div>
+            <div class="meter-value" id="mReviews">—</div>
+            <div class="meter-bar"><div class="meter-fill" id="mReviewsBar"></div></div>
+          </div>
+          <div class="meter-card reveal reveal-delay-3">
+            <div class="meter-label">Deploy streak</div>
+            <div class="meter-value" id="mStreak">—</div>
+            <div class="meter-bar"><div class="meter-fill" id="mStreakBar"></div></div>
           </div>
         </div>
-        <div class="activity-stats-col">
-          <div class="activity-card stat-card">
-            <div class="stat-icon">🔥</div>
-            <div class="stat-big" data-count="365">0</div>
-            <div class="stat-desc">Contribution streak</div>
-          </div>
-          <div class="activity-card stat-card">
-            <div class="stat-icon">⭐</div>
-            <div class="stat-big" data-count="1247">0</div>
-            <div class="stat-desc">Total stars earned</div>
-          </div>
-          <div class="activity-card stat-card">
-            <div class="stat-icon">🍴</div>
-            <div class="stat-big" data-count="328">0</div>
-            <div class="stat-desc">Total forks</div>
-          </div>
-        </div>
       </div>
+      <p class="stats-disclaimer">* Animated visualization — for entertainment purposes.</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- ===== CONTACT ===== -->
   <section class="contact" id="contact">
     <div class="section-container">
       <div class="section-header">
@@ -257,38 +280,38 @@
       </div>
       <div class="contact-layout">
         <div class="contact-text">
-          <p class="contact-lead">Hãy cùng xây dựng điều gì đó tuyệt vời.</p>
-          <p>Tôi luôn sẵn sàng cho những cơ hội mới, dự án thú vị, hoặc chỉ đơn giản là một cuộc trò chuyện về công nghệ.</p>
-          <a href="mailto:hello@yourname.dev" class="contact-email">hello@yourname.dev</a>
+          <p class="contact-lead">Let's build something great together.</p>
+          <p>I'm always open to new opportunities, interesting projects, or just a good conversation about technology.</p>
+          <a href="mailto:binhancktv@gmail.com" class="contact-email">binhancktv@gmail.com</a>
         </div>
         <div class="contact-socials">
-          <a href="https://github.com/yourusername" class="social-link" target="_blank" rel="noopener">
+          <a href="https://github.com/SpacerZ" class="social-link" target="_blank" rel="noopener">
             <div class="social-icon">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             </div>
             <div class="social-info">
               <span class="social-name">GitHub</span>
-              <span class="social-handle">@yourusername</span>
+              <span class="social-handle">@SpacerZ</span>
             </div>
             <svg class="social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
-          <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank" rel="noopener">
-            <div class="social-icon linkedin">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <a href="mailto:binhancktv@gmail.com" class="social-link">
+            <div class="social-icon email-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
             <div class="social-info">
-              <span class="social-name">LinkedIn</span>
-              <span class="social-handle">Your Name</span>
+              <span class="social-name">Email</span>
+              <span class="social-handle">binhancktv@gmail.com</span>
             </div>
             <svg class="social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
-          <a href="https://twitter.com/yourusername" class="social-link" target="_blank" rel="noopener">
-            <div class="social-icon twitter">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <a href="https://facebook.com/Ano.Spacer" class="social-link" target="_blank" rel="noopener">
+            <div class="social-icon fb-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
             </div>
             <div class="social-info">
-              <span class="social-name">Twitter / X</span>
-              <span class="social-handle">@yourusername</span>
+              <span class="social-name">Facebook</span>
+              <span class="social-handle">Ano.Spacer</span>
             </div>
             <svg class="social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
@@ -297,10 +320,9 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <span class="footer-copy">© 2025 Your Name. Built with ❤️ &amp; ☕</span>
+      <span class="footer-copy">© 2026 Trần Bình An · SpacerZ</span>
       <span class="footer-tech">HTML · CSS · JS</span>
       <a href="#home" class="footer-top">↑ Back to top</a>
     </div>
